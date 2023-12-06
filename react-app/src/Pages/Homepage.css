@@ -1,0 +1,35 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffeece;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the container height to the full viewport height */
+}
+
+.homepage-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  gap: 20px; /* Add space between buttons */
+}
+
+.homepage-buttons button {
+  font-size: 36px;
+  margin-right: 10px;
+  padding: 10px 20px; /* Increase padding to make them rectangular */
+  border: 5px solid rgb(255, 224, 175);
+  border-radius: 15px; /* Add rounded corners */
+  background-color: rgb(255, 248, 233); /* Set the initial background color */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add a transition for the hover effect */
+  height: 160px;
+  width: 400px;
+}

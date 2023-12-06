@@ -1,0 +1,50 @@
+/* Profile container */
+.profile-container {
+  text-align: center;
+  margin: 120px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+/* Profile image */
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+/* Profile info */
+.profile-info h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* Update Profile button */
+.button {
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 10px 20px; /* Increase padding to make them rectangular */
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 15px; /* Add rounded corners */
+  background-color: rgb(255, 255, 255); /* Set the initial background color */
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add a transition for the hover effect */
+  height: 60px;
+}
+
+.button:hover {
+  background-color: #FF5733; /* Change background color on hover to red */
+  color: rgb(255, 255, 255);
+}
