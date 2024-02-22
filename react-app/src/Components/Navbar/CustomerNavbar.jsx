@@ -11,18 +11,16 @@ const CustomerNavbar = () => {
 
   return shouldRenderNavbar ? (
     <div className='navbar'>
-      <div className='nav-logo'>
-        <img src={logo} alt="" className="logo-image"/>
-      </div>
-      <div className="buttons">
-        <Link to="/c"> <button>Search</button> </Link>
-        <Link to="/c/profile"> <button>My Profile</button> </Link>
+      <img src={logo} alt="logo" className='logo'/>
+      <div className="nav-buttons">
+        <Link to="/c"> <button class="nav-button">Search</button> </Link>
+        <Link to="/c/profile"> <button class="nav-button">My Profile</button> </Link>
         <Link to="/c/cart">
-        <button>
+        <button class="nav-button">
           <img src={cart_icon} alt="Cart" className="cart-image"/>
         </button>
         </Link>
-        <Link to="/"> <button>Home</button> </Link>
+        <Link to="/"> <button class="nav-button">Home</button> </Link>
       </div>
     </div>
   ) : null
