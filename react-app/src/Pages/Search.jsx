@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import restaurantData from '../Components/Assets/all_restaurants.js'
-import './Search.css'; // Import the CSS file
 import { Link } from 'react-router-dom'
 
 const Search = () => {
@@ -27,7 +26,7 @@ const Search = () => {
                 className="restaurant-image"
               ></div>
               <h2>{restaurant.name}</h2>
-              <Link to="/c/bobahouse">
+              <Link to="/c/storepage">
               <button class="order-button">Order</button>
               </Link>
             </div>

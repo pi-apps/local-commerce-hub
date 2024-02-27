@@ -23,7 +23,7 @@
 }
 
 .cart-image {
-  height: 30px; /* Adjust the maximum height to make the image smaller */
+  height: 25px; /* Adjust the maximum height to make the image smaller */
 }
 
 /* Button styles */
@@ -40,7 +40,6 @@
   text-align: center;
   height: 100%;
   font-size: 10 vh;
-  padding: 3vw 2vw;
   align-items: center;
   border: 2px solid rgb(255, 0, 0);
   border-radius: 15px; /* Add rounded corners */
