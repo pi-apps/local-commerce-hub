@@ -66,7 +66,7 @@ async function main() {
             console.log("  Price:", item.price);
             console.log("  Rank:", item.rank);
         });
-    } catch (error) {
+    } catch (error) {}
         console.error("Error fetching data:", error);
     }
 }
