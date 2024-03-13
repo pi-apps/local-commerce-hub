@@ -6,7 +6,7 @@ import Cart from './Pages/Cart'
 import CustomerProfile from './Pages/CustomerProfile'
 import BusinessProfile from './Pages/BusinessProfile'
 import Search from './Pages/Search'
-import BobaHouse from './Pages/BobaHouse'
+import StorePage from './Pages/StorePage'
 import Homepage from './Pages/Homepage'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path='/c/cart' element={<Cart/>} />
         <Route path="/c/profile" element={<CustomerProfile/>} />
-        <Route path='/c/bobahouse' element={<BobaHouse/>} />
+        <Route path='/c/storepage' element={<StorePage/>} />
         <Route path='/c' element={<Search/>} />
         <Route path='/b' element={<BusinessProfile/>} />
         <Route path='/' element={<Homepage/>} />

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import './BobaHouse.css';
 import backdrop from '../Components/Assets/shop_sign.png';
 import all_product from '../Components/Assets/all_product';
 import { useCart } from './CartContext.jsx';
 
-const BobaHouse = () => {
+const StorePage = () => {
   // State to keep track of the count of added items
   const [itemCounts, setItemCounts] = useState(all_product.map(() => 0));
 
@@ -69,8 +68,8 @@ const BobaHouse = () => {
   return (
   <div>
     <div className="banner">
-      <img src={backdrop} alt="" className="hero-image"/>
-      <div className="hero-text">
+      <img src={backdrop} alt="store-image" className="banner-image"/>
+      <div className="banner-text">
         <h1>Boba House</h1>
       </div>
     </div>
@@ -97,4 +96,4 @@ const BobaHouse = () => {
   );
 };
 
-export default BobaHouse;
+export default StorePage;

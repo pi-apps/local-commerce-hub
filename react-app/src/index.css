@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffeece;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the container height to the full viewport height */
+  width: 100vw; /* Set the container height to the full viewport height */
+}
+
+.homepage-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  gap: 5vh; /* Add space between buttons */
+}
+
+.homepage-buttons button {
+  font-size: 10vw;
+  margin-right: 10px;
+  padding: 10px 20px; /* Increase padding to make them rectangular */
+  border: 5px solid rgb(255, 224, 175);
+  border-radius: 15px; /* Add rounded corners */
+  background-color: rgb(255, 248, 233); /* Set the initial background color */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  height: 20vh;
+  width: 80vw;
+}
+
+.search-container {
+  margin-top: 20vh;
+  margin-left: 5vw;
+  text-align: center;
+  font-size: 7vw;
+}
+
+/* Search bar */
+input[type="text"] {
+  width: 80vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 4vw;
+  /* margin-bottom: 20px; */
+}
+
+/* Restaurant list */
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Restaurant card */
+.restaurant-card {
+  margin-left: 5vw;
+  margin-top: 5vw;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 20px;
+  width: 30vw;
+}
+
+/* Restaurant image */
+.restaurant-image {
+  background-image: url('Components/Assets/shop_sign.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 10vh;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Restaurant name */
+h2 {
+  font-size: 4vw;
+  margin: 3 vh;
+}
+
+/* Order button */
+.order-button {
+  font-size: 4vw;
+  align-items: center;
+  padding: 2vw 5vw; /* Increase padding to make them rectangular */
+  border: 2px solid rgb(255, 0, 0);
+  border-radius: 15px; /* Add rounded corners */
+  background-color: rgb(255, 255, 255); /* Set the initial background color */
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add a transition for the hover effect */
+  height: 3 vh;
+}
+
+.order-button:hover {
+  background-color: #FF5733; /* Change background color on hover to red */
+  color: rgb(255, 255, 255);
+}
+
+.banner {
+  height: 30vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20%;
+}
+
+.banner-image {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* Adjust the height as needed */
+  object-fit: cover;
+  object-position: 50% 10%;
+  filter: brightness(70%)
+}
+
+.banner-text {
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  font-size: 20px
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-item {
+  width: 25%; /* Adjust the width to fit three items per row with some spacing */
+  margin: 2%; /* Adjust the margin for spacing between items */
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 10px;
+}
+
+.product-item img {
+  width: 100%;
+  height:200px;
+  object-fit: cover;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-button,
+.remove-button,
+.item-count-box {
+  background-color: #ffffff;
+  color: rgb(243, 0, 0);
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.remove-button {
+  background-color: #ffffff;
+}
+
+.item-count-box {
+  color: #333; /* Adjust text color */
+  height: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 15px; /* Add rounded corners */
+  display: flex;
+  align-items: center;
 }
